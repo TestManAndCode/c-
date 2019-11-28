@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsFormsApp1.service;
+using WindowsFormsApp1.form;
+using WindowsFormsApp1.utils;
 
 namespace WindowsFormsApp1
 {
@@ -23,8 +25,15 @@ namespace WindowsFormsApp1
         {
             string loginName = this.loginName.Text;
             string password = this.password.Text;
-            String message = loginService.login(loginName, password);
-            MessageBox.Show(message);
+            Boolean hasLogin=loginService.login(loginName, password);
+            MessageBox.Show(hasLogin ? "登陆成功" : "登陆失败");
+            if (hasLogin)
+            {
+                WindowState = FormWindowState.Minimized;
+                PrintUtil.Myprinter(comboBox1.SelectedItem.ToString());
+
+            }
+
 
         }
 
@@ -35,15 +44,90 @@ namespace WindowsFormsApp1
 
         private void form_login_Resize(object sender, EventArgs e)
         {
-            if (this.WindowState == FormWindowState.Minimized) {
-                notifyIcon1.Visible = true;
-                this.Hide();
-            }
+           
         }
 
         private void form_login_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void notifyIcon1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            if (WindowState == FormWindowState.Minimized)
+            {
+                //还原窗体显示    
+                WindowState = FormWindowState.Normal;
+                //激活窗体并给予它焦点
+                this.Activate();
+                //任务栏区显示图标
+                this.ShowInTaskbar = true;
+                //托盘区图标隐藏
+                notifyIcon1.Visible = false;
+            }
+        }
+
+        private void form_login_SizeChanged(object sender, EventArgs e)
+        {
+            //判断是否选择的是最小化按钮
+            if (WindowState == FormWindowState.Minimized)
+            {
+                //隐藏任务栏区图标
+                this.ShowInTaskbar = false;
+                //图标显示在托盘区
+                notifyIcon1.Visible = true;
+            }
+        }
+
+        private void form_login_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("是否确认退出程序？", "退出", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+            {
+                // 关闭所有的线程
+                this.Dispose();
+                this.Close();
+            }
+            else
+            {
+                e.Cancel = true;
+            }
+        }
+
+        private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void 显示ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Normal;
+        }
+
+        private void 退出ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("是否确认退出程序？", "退出", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+            {
+                // 关闭所有的线程
+                this.Dispose();
+                this.Close();
+            }
+        }
+
+        private void 显示打印机器设置ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Print print = new Print();
+            print.Show();
+            print.WindowState = FormWindowState.Normal;
+        }
+
+        private void form_login_Shown(object sender, EventArgs e)
+        {
+            List<string> list = LocalPrinter.GetLocalPrinters();
+            foreach (String name in list)
+            {
+                comboBox1.Items.Add(name);
+            }
+            comboBox1.SelectedIndex = 0;
         }
     }
 }
