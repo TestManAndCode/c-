@@ -6,6 +6,7 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using JumpKick.HttpLib;
+using WindowsFormsApp1.utils;
 
 namespace WindowsFormsApp1.utils
 {
@@ -25,7 +26,8 @@ namespace WindowsFormsApp1.utils
                 body = sr.ReadToEnd();
             }
             catch (Exception e) {
-                Console.WriteLine(e.Message);
+
+                LogHelper.WriteLog( e.Message.ToString());
             }
             
             return body;

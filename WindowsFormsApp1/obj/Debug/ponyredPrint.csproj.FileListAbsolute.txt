@@ -29,3 +29,6 @@ D:\c#\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\打印程序.exe.manifest
 D:\c#\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\打印程序.application
 D:\c#\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\打印程序.exe
 D:\c#\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\打印程序.pdb
+D:\c#\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\log4net.config
+D:\c#\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\log4net.dll
+D:\c#\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\log4net.xml
