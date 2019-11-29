@@ -5,10 +5,10 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsFormsApp1.service;
-using WindowsFormsApp1.form;
 using WindowsFormsApp1.utils;
 
 namespace WindowsFormsApp1
@@ -16,6 +16,7 @@ namespace WindowsFormsApp1
     public partial class form_login : Form
     {
         LoginService loginService = new LoginService();
+        
         public form_login()
         {
             InitializeComponent();
@@ -115,9 +116,7 @@ namespace WindowsFormsApp1
 
         private void 显示打印机器设置ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Print print = new Print();
-            print.Show();
-            print.WindowState = FormWindowState.Normal;
+
         }
 
         private void form_login_Shown(object sender, EventArgs e)
@@ -128,6 +127,22 @@ namespace WindowsFormsApp1
                 comboBox1.Items.Add(name);
             }
             comboBox1.SelectedIndex = 0;
+            Thread thread2 = new Thread(start);
+            thread2.IsBackground = true;
+            thread2.Start();
+            Thread thread3 = new Thread(link);
+            thread3.IsBackground = true;
+            thread3.Start();
+            
+           
+
+        }
+        public static void link() {
+            SuperSocketClient.link();
+        }
+        public static void start()
+        {
+            SuperSocketServer.Main(new string[] { });
         }
     }
 }

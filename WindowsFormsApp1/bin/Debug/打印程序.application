@@ -7,14 +7,14 @@
     <framework targetVersion="4.7.2" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="打印程序.exe.manifest" size="9431">
+    <dependentAssembly dependencyType="install" codebase="打印程序.exe.manifest" size="12911">
       <assemblyIdentity name="打印程序.exe" version="1.0.0.1" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>iKWa5QyhhKKaq20SMQzy1amm2LNeALimME2/xy0a9hA=</dsig:DigestValue>
+        <dsig:DigestValue>QgX6iq1DZ8+syfDkUy7dCwKpjbreAJ9tY7oTkvXrlok=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
