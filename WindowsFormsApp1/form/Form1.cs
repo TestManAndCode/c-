@@ -127,9 +127,7 @@ namespace WindowsFormsApp1
                 comboBox1.Items.Add(name);
             }
             comboBox1.SelectedIndex = 0;
-            Thread thread2 = new Thread(start);
-            thread2.IsBackground = true;
-            thread2.Start();
+    
             Thread thread3 = new Thread(link);
             thread3.IsBackground = true;
             thread3.Start();
@@ -138,11 +136,10 @@ namespace WindowsFormsApp1
 
         }
         public static void link() {
-            SuperSocketClient.link();
+            socketClient socket = new socketClient("127.0.0.1",9099,"","");
+            
+            socket.startComm();
         }
-        public static void start()
-        {
-            SuperSocketServer.Main(new string[] { });
-        }
+  
     }
 }

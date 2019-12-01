@@ -30,12 +30,6 @@ D:\c#\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\打印程序.exe
 D:\c#\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\打印程序.pdb
 D:\c#\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\log4net.dll
 D:\c#\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\log4net.xml
-D:\c#\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\SuperSocket.Common.dll
-D:\c#\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\SuperSocket.Facility.dll
-D:\c#\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\SuperSocket.SocketBase.dll
-D:\c#\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\SuperSocket.Common.xml
-D:\c#\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\SuperSocket.Facility.xml
-D:\c#\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\SuperSocket.SocketBase.xml
-D:\c#\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\SuperSocket.SocketEngine.dll
-D:\c#\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\SuperSocket.SocketService.exe
-D:\c#\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\SuperSocket.SocketEngine.xml
+D:\c#\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\SuperSocket.ClientEngine.dll
+D:\c#\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\SuperSocket.ProtoBase.dll
+D:\c#\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\SuperSocket.ProtoBase.xml

@@ -103,62 +103,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SuperSocket.Common.dll" size="40448">
-      <assemblyIdentity name="SuperSocket.Common" version="1.6.6.1" publicKeyToken="6C80000676988EBB" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SuperSocket.ClientEngine.dll" size="49664">
+      <assemblyIdentity name="SuperSocket.ClientEngine" version="0.10.0.0" publicKeyToken="EE9AF13F57F00ACC" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>ZFZ9be2eK8lrpPhNb0WRoz1RZw5+zsqKBdayCLgtkOM=</dsig:DigestValue>
+        <dsig:DigestValue>pjLtbhA3uNHz6JgcvXSII/eOoJSXvWHSfd4xwe+qIwk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SuperSocket.Facility.dll" size="18944">
-      <assemblyIdentity name="SuperSocket.Facility" version="1.6.6.1" publicKeyToken="6C80000676988EBB" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SuperSocket.ProtoBase.dll" size="32768">
+      <assemblyIdentity name="SuperSocket.ProtoBase" version="1.7.0.17" publicKeyToken="6C80000676988EBB" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>6nJAnGoHK8zK6t3eucK3w97azOZeWYU49kgANEHtWj0=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SuperSocket.SocketBase.dll" size="115200">
-      <assemblyIdentity name="SuperSocket.SocketBase" version="1.6.6.1" publicKeyToken="6C80000676988EBB" language="neutral" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>DrpD8Mg80UkrRJ9tvNaMXOCU1ddUc20r6BHSvpZ+weQ=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SuperSocket.SocketEngine.dll" size="113152">
-      <assemblyIdentity name="SuperSocket.SocketEngine" version="1.6.6.1" publicKeyToken="6C80000676988EBB" language="neutral" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>mhmZzMoq/5yCJUlAs/UoScR58YfWQThdRZgfU/owNYc=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SuperSocket.SocketService.exe" size="17408">
-      <assemblyIdentity name="SuperSocket.SocketService" version="1.6.6.1" publicKeyToken="6C80000676988EBB" language="neutral" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>8w48d+ZrgT22Euu77T9QcSpb0+QiViTGScr7WEbCIb4=</dsig:DigestValue>
+        <dsig:DigestValue>etpeDcYfjFVH+ErJj8zB3V6V15kFTrn2ZvSwBDhy7/I=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -199,14 +163,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="打印程序.exe" size="204232">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="打印程序.exe" size="204744">
       <assemblyIdentity name="打印程序" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>vaIvRnrraHaKmWNS/E6rMAwqEYbdrp8v4RBwEZEalb0=</dsig:DigestValue>
+        <dsig:DigestValue>0wnarbetgPA/4yiJnJCSYD46swDMHmGBHQEioDBhfQQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
